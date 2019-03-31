@@ -3,7 +3,7 @@ package java38;
 
 public class Cllllo {
 
-	public int []zxm_a = {1,2,3,4};
+	public int []zxm_a = {1,2,-10,4};
 	public int zxm_max = zxm_a[0];
 	public int zxm_temp = 0;	
 	public int start = 0;
