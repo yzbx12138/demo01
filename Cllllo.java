@@ -3,7 +3,7 @@ package java38;
 
 public class Cllllo {
 
-	public int []zxm_a = {1,2,-10,4};
+	public int []zxm_a = {1};
 	public int zxm_max = zxm_a[0];
 	public int zxm_temp = 0;	
 	public int start = 0;
@@ -18,11 +18,14 @@ public class Cllllo {
 	
 	//This is the head of the function
 	public void evaluation() {
+		
+		
+		
 		//This is the body of the function
 		for (int i = 0; i < 2*zxm_a.length; i++) {
 			
 			//Judge jump condition
-			if (i!=0&&start==i%zxm_a.length) {
+			if (start==i-zxm_a.length) {
 				break;
 			}
 			
@@ -30,7 +33,7 @@ public class Cllllo {
 			if (zxm_temp<0) {
 				zxm_temp = zxm_a[i%zxm_a.length];
 				start = i;
-				System.out.println("i"+i);
+//System.out.println("i"+i);
 			}else {
 				zxm_temp += zxm_a[i%zxm_a.length];
 			}
